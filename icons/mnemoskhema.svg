@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="8.0562mm" height="46.5082mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 159 919"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:9.88064;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:black;stroke-width:4.94032;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <line class="fil0 str0" x1="87" y1="5" x2="87" y2= "65" />
+  <line class="fil0 str0" x1="21" y1="67" x2="154" y2= "67" />
+  <line class="fil0 str0" x1="125" y1="85" x2="50" y2= "85" />
+  <line class="fil0 str0" x1="87" y1="214" x2="87" y2= "84" />
+  <line class="fil0 str0" x1="21" y1="394" x2="154" y2= "394" />
+  <line class="fil0 str0" x1="125" y1="411" x2="50" y2= "411" />
+  <line class="fil0 str0" x1="87" y1="393" x2="87" y2= "249" />
+  <line class="fil0 str0" x1="21" y1="914" x2="154" y2= "914" />
+  <line class="fil0 str0" x1="87" y1="636" x2="87" y2= "412" />
+  <circle class="fil0 str0" cx="87" cy="232" r="17"/>
+  <circle class="fil0 str0" cx="87" cy="651" r="17"/>
+  <circle class="fil0 str0" cx="87" cy="777" r="17"/>
+  <circle class="fil0 str1" cx="13" cy="699" r="10"/>
+  <line class="fil0 str1" x1="20" y1="708" x2="26" y2= "712" />
+ </g>
+</svg>

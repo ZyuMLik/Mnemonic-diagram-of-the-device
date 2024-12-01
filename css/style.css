@@ -1,0 +1,183 @@
+main {
+    position: relative;
+    margin: 30px auto;
+    max-width: 1000px;
+    /* background-color:blueviolet */
+}
+
+.accumulator {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border: solid gray 3px;
+    border-radius: 10px;
+    width: 450px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.interactive_element {
+    display: flex;
+    align-items:center;
+    margin-bottom: 10px;
+    
+}
+.interactive_element div{
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.interactive_element__padding_left {
+    padding-left: 120px;
+}
+
+
+.battery_temperature__text{
+    margin-right: 10px;
+}
+
+.battery {
+    border-radius: 10px;
+    background-color:rgb(170, 170, 170);
+    width: 400px;
+    padding: 10px 20px 0 ;
+    margin-bottom: 5px;
+}
+
+.background_gray {
+    background-color: rgb(209, 209, 209);
+}
+
+.background_red {
+    background-color: red;
+    color: white;
+}
+
+.background_blue {
+    background-color: rgb(20, 67, 153);
+    color: white;
+}
+
+.size_element{
+    width: max-content;
+    text-align: center;
+    padding: 5px 20px;
+    
+}
+
+.switch_status {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 50px;
+    align-items: center;
+    
+}
+
+.switch_status__on {
+    background-color: red;
+    width: 3px;
+    height: 37px;
+    transform: translateX(1px) 
+}
+
+.switch_status__off {
+    background-color: green;
+    width: 3px;
+    height: 40px;
+    transform: translateX(-9px) rotate(-205deg);
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    height: 50px;
+    padding-top: 5px;
+    transform: translateX(2px) 
+}
+.current_line__charge {
+    background-color: green;
+    width: 3px;
+    height: 70px;
+}
+.current_arrow__charge {
+    background-color: transparent;
+    width: 0px;
+    height: 10px;
+    border-bottom: 13px solid green;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+.rotate {
+    transform: translateX(2px) translateY(12px) rotate(180deg);
+}
+.rotate .current_line__charge {
+    background-color: red;
+    width: 3px;
+    height: 70px;
+}
+.rotate .current_arrow__charge {
+    background-color: transparent;
+    width: 0px;
+    height: 10px;
+    border-bottom: 13px solid red;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.fault {
+    position: absolute;
+    left: 50px;
+    bottom: 55px;
+    width: 350px;
+}
+
+.voltage_current {
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+.mnemonic_diagram img{
+    position: absolute;
+    height: 382px;
+    padding-left: 28px;
+}
+
+.voltage_accumulator{
+    padding-left: 50px;
+}
+
+.condition_accumulator {
+    position: absolute;
+    /* width: 300px; */
+    left: 95px;
+}
+
+.warning {
+    text-align: center;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+.btn__reset_protections {
+    position: absolute;
+    left: 300px;
+    bottom: 10px;
+    color: white;
+    background-color: red;
+    border-color: red;
+    border-radius: 10px;
+    width:80px;
+    height: 50px;
+}
+.btn__reset_protections:hover {
+    background-color: rgb(204, 20, 20);
+    border-color: rgb(204, 20, 20);
+}
