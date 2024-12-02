@@ -87,14 +87,14 @@ main {
     background-color: red;
     width: 3px;
     height: 37px;
-    transform: translateX(1px) 
+    transform: translateX(1px)  translateY(-17px)
 }
 
 .switch_status__off {
     background-color: green;
     width: 3px;
     height: 40px;
-    transform: translateX(-9px) rotate(-205deg);
+    transform: translateX(-9px) translateY(-17px) rotate(-205deg);
 }
 
 .current {
@@ -104,7 +104,7 @@ main {
     width: 30px;
     height: 50px;
     padding-top: 5px;
-    transform: translateX(2px) 
+    transform: translateX(2px) translateY(-17px);
 }
 .current_line__charge {
     background-color: green;
@@ -120,7 +120,7 @@ main {
     border-left: 7px solid transparent;
 }
 .rotate {
-    transform: translateX(2px) translateY(12px) rotate(180deg);
+    transform: translateX(2px) translateY(-6px) rotate(180deg);
 }
 .rotate .current_line__charge {
     background-color: red;

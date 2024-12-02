@@ -68,17 +68,61 @@ class Battery {
             <div class="background_yellow"> ${this.warning.slice(0, 15)}</div> 
             <div> ${this.warning.slice(16)}</div>
             `;
-            
-            this.updateElementAndBackgroundColor(
-                batteryTemperatureData, 
-                this.checkColor(this.batteryTemperatureData, this.batteryTemperatureDataMin, this.batteryTemperatureDataMax), 
-                this.batteryTemperatureData
-            );
         }
+
+        this.updateElementAndBackgroundColor(
+            batteryTemperatureData, 
+            this.checkColor(
+                this.batteryTemperatureData, 
+                this.batteryTemperatureDataMin, 
+                this.batteryTemperatureDataMax
+            ), 
+            this.batteryTemperatureData  + "°C"
+        );
+
+        voltageGroupBattery_01.textContent = this.voltageGroupBattery_01 + " V";
+        voltageElementBattery_01.textContent = this.voltageElementBattery_01 + " V/e";
+        this.updateElementAndBackgroundColor(
+            asymmetryData,
+            this.checkColor(
+                this.asymmetryData,
+                this.asymmetryDataMin,
+                this.asymmetryDataMax
+            ),
+            this.asymmetryData + "%"
+        );
+        voltageGroupBattery_02.textContent = this.voltageGroupBattery_02 + " V";
+        voltageElementBattery_02.textContent = this.voltageElementBattery_02 + " V/e";
+        voltageAccumulatorData.textContent = this.voltageAccumulatorData + " V";
+
+        switchStatus.parentElement.classList.remove("hidden");
+        if (this.switchStatus === "on") {
+            switchStatus.classList.remove("switch_status__off")
+            switchStatus.classList.add("switch_status__on")
+        } else {
+            switchStatus.classList.remove("switch_status__on")
+            switchStatus.classList.add("switch_status__off")
+        }
+
+        if(this.fault === "on") {
+            fault.classList.remove("hidden")
+            faultInfo.textContent = this.faultInfo;
+            btnResetProtections.classList.remove("hidden");
+        }
+        current.classList.remove("hidden");
+        if(this.current === "charge") {
+            current.classList.remove("rotate");
+        } else current.classList.add("rotate");
+
+        currentData.textContent = this.currentData;
+        currentText.textContent = this.currentText;
+
+
+
         
     }
     updateElementAndBackgroundColor(element, colorNew, text) {
-        element.textContent = text + "°C";
+        element.textContent = text;
         if (element.classList.contains(colorNew)) return;
         this.backgroundColors.forEach(colorOld => {
             if (element.classList.contains(colorOld)) {
@@ -144,22 +188,22 @@ btnResetProtections.addEventListener("click", (e) => {
 
 const testBattery = new Battery(
     "Предупреждение. Неисправность датчика температуры АКБ",
-    "-10", 
+    "+15", 
     115,
     27.7,
-    2,
+    12,
     105,
     13.125,
     220,
-    "on",
     "off",
-    "---",
+    "on",
+    "АЛЯРМ!",
     "charge",
-    -50,
-    "Ток (разряд)"
+    "+50",
+    "Ток (заряд)"
 );
+
 testBattery.update();
-console.log(testBattery.currentText)
 
 
 
