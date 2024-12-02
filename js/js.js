@@ -56,6 +56,21 @@ class Battery {
     asymmetryDataMax = 10;
 
     update() {
+        if(this.warning === "Предупреждений нет") {
+            warning.innerHTML = `
+            <div class="text_gray"> ${this.warning}</div>
+            `;
+            // warning.textContent = this.warning;
+        } else {
+            warning.innerHTML = `
+            <div class="background_yellow"> ${this.warning.slice(0, 15)}</div> 
+            <div> ${this.warning.slice(16)}</div>
+            `;
+
+        }
+        
+    }
+    updateBackgroundColor() {
 
     }
 }
@@ -117,7 +132,9 @@ const testBattery = new Battery(
     -50,
     "Ток (разряд)"
 );
+testBattery.update();
 console.log(testBattery.currentText)
+
 
 
 
