@@ -68,15 +68,12 @@ class Battery {
             <div class="background_yellow"> ${this.warning.slice(0, 15)}</div> 
             <div> ${this.warning.slice(16)}</div>
             `;
-            let colorNew;
-            if (this.batteryTemperatureData < this.batteryTemperatureDataMin) {
-                colorNew = "background_blue";
-            } else if (this.batteryTemperatureData > this.batteryTemperatureDataMax) {
-                colorNew = "background_red";
-            } else {
-                colorNew = "background_yellow";
-            }
-            this.updateElementAndBackgroundColor(batteryTemperatureData, colorNew, this.batteryTemperatureData);
+            
+            this.updateElementAndBackgroundColor(
+                batteryTemperatureData, 
+                this.checkColor(this.batteryTemperatureData, this.batteryTemperatureDataMin, this.batteryTemperatureDataMax), 
+                this.batteryTemperatureData
+            );
         }
         
     }
@@ -90,6 +87,17 @@ class Battery {
             };
 
         });
+    }
+
+    checkColor(numNew, numMin, numMax) {
+        if (numNew < numMin) {
+            return "background_blue";
+        } else if (numNew > numMax) {
+            return "background_red";
+        } else {
+            return "background_yellow";
+        }
+        
     }
 }
 
@@ -136,7 +144,7 @@ btnResetProtections.addEventListener("click", (e) => {
 
 const testBattery = new Battery(
     "Предупреждение. Неисправность датчика температуры АКБ",
-    "+50", 
+    "-10", 
     115,
     27.7,
     2,
