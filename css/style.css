@@ -8,7 +8,7 @@ main {
 .accumulator {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     border: solid gray 3px;
     border-radius: 10px;
     width: 450px;
@@ -18,11 +18,10 @@ main {
 
 .interactive_element {
     display: flex;
-    align-items:center;
+    align-items: center;
     margin-bottom: 10px;
-    
 }
-.interactive_element div{
+.interactive_element div {
     margin-right: 10px;
     border-radius: 5px;
 }
@@ -31,16 +30,15 @@ main {
     padding-left: 120px;
 }
 
-
-.battery_temperature__text{
+.battery_temperature__text {
     margin-right: 10px;
 }
 
 .battery {
     border-radius: 10px;
-    background-color:rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170);
     width: 400px;
-    padding: 10px 20px 0 ;
+    padding: 10px 20px 0;
     margin-bottom: 5px;
 }
 
@@ -67,11 +65,10 @@ main {
     color: black;
 }
 
-.size_element{
+.size_element {
     width: max-content;
     text-align: center;
     padding: 5px 20px;
-    
 }
 
 .switch_status {
@@ -80,14 +77,13 @@ main {
     width: 30px;
     height: 50px;
     align-items: center;
-    
 }
 
 .switch_status__on {
     background-color: red;
     width: 3px;
     height: 37px;
-    transform: translateX(1px)  translateY(-17px)
+    transform: translateX(1px) translateY(-17px);
 }
 
 .switch_status__off {
@@ -153,13 +149,13 @@ main {
     opacity: 0%;
 }
 
-.mnemonic_diagram img{
+.mnemonic_diagram img {
     position: absolute;
     height: 382px;
     padding-left: 28px;
 }
 
-.voltage_accumulator{
+.voltage_accumulator {
     padding-left: 50px;
 }
 
@@ -185,10 +181,28 @@ main {
     background-color: red;
     border-color: red;
     border-radius: 10px;
-    width:80px;
+    width: 80px;
     height: 50px;
 }
 .btn__reset_protections:hover {
     background-color: rgb(204, 20, 20);
     border-color: rgb(204, 20, 20);
+}
+
+.div__interactive_element {
+    width: 85px;
+    height: 40px;
+    background-color: gold;
+    border-radius: 10px;
+    /* opacity: 50%; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px;
+    margin-left: 300px; */
+    left: 298px;
+    top: 120px;
+    /* 791px; */
+
 }

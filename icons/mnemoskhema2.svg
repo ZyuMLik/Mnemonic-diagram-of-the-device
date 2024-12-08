@@ -92,15 +92,18 @@ viewBox="0 0 4656.66 6349.98"
   <ellipse fill="none" stroke="black" stroke-width="50" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" cx="1357.15" cy="5212.37" rx="84.63" ry="84.43"/>
   <ellipse fill="none" stroke="black" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" cx="988.75" cy="4824.99" rx="49.78" ry="49.66"/>
   <line fill="none" stroke="black" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" x1="1023.6" y1="4869.68" x2="1053.47" y2= "4889.55" />
-  <rect fill="#E6E6E6" x="2775.47" y="714.16" width="791.93" height="343.51" rx="96.21" ry="96.21"/>
-  <text x="1084.07" y="934.86"  fill="#2B2A29" font-weight="normal" font-size="158.75px" font-family="Arial">Температура АКБ</text>
+  <g id="tAKB_group">
+    <rect id="tAKB" fill="#E6E6E6" x="2775.47" y="714.16" width="791.93" height="343.51" rx="96.21" ry="96.21"/>
+    <text id="tAKB_text" x="3170.24" y="931.6"  fill="#2B2A29" font-weight="normal" font-size="176.39px" font-family="Arial">---</text>
+    <text x="1084.07" y="934.86"  fill="#2B2A29" font-weight="normal" font-size="158.75px" font-family="Arial">Температура АКБ</text>
+  </g>
   <rect fill="#E6E6E6" x="1780.05" y="1347.35" width="791.93" height="343.51" rx="96.21" ry="96.21"/>
   <text x="2628.98" y="1465.21"  fill="#2B2A29" font-weight="normal" font-size="158.75px" font-family="Arial">Напряжение </text>
   <text x="2628.98" y="1642.56"  fill="#2B2A29" font-weight="normal" font-size="158.75px" font-family="Arial">группы</text>
   <rect fill="#E6E6E6" x="1780.05" y="1798.31" width="791.93" height="343.51" rx="96.21" ry="96.21"/>
   <text x="2628.98" y="1937.02"  fill="#2B2A29" font-weight="normal" font-size="158.75px" font-family="Arial">Напряжение </text>
   <text x="2628.98" y="2114.37"  fill="#2B2A29" font-weight="normal" font-size="158.75px" font-family="Arial">элемента</text>
-  <text x="3083.24" y="931.6"  fill="#2B2A29" font-weight="normal" font-size="176.39px" font-family="Arial">---</text>
+  
   <rect fill="none" stroke="#B3B3B3" stroke-width="20" stroke-miterlimit="22.9256" x="211.66" y="503.29" width="4233.33" height="3457.23" rx="244.91" ry="100.01"/>
   <text x="1456.57" y="314.01"  fill="#2B2A29" font-weight="normal" font-size="176.39px" font-family="Arial">Предупреждений нет</text>
   <rect fill="#E6E6E6" x="1780.06" y="2335.2" width="534.56" height="343.51" rx="64.94" ry="96.21"/>
@@ -113,9 +116,11 @@ viewBox="0 0 4656.66 6349.98"
   <rect fill="#E6E6E6" x="1780.06" y="4057.52" width="534.56" height="343.51" rx="64.94" ry="96.21"/>
   <text x="2414.37" y="4285"  fill="#2B2A29" font-weight="normal" font-size="176.39px" font-family="Arial">Общее напряжение</text>
   <text x="1959.14" y="4274.96"  fill="#2B2A29" font-weight="normal" font-size="176.39px" font-family="Arial">---</text>
-  <rect fill="#CC3300" x="3412.38" y="5419.03" width="1143.39" height="749.35" rx="138.91" ry="209.88"/>
-  <text x="3626.78" y="5739.63"  fill="white" font-weight="bold" font-size="198.78px" font-family="Arial">СБРОС </text>
-  <text x="3616.59" y="5961.7"  fill="white" font-weight="bold" font-size="198.78px" font-family="Arial">ЗАЩИТ</text>
+  <g id="btn_reset_group">
+    <rect id="btn_reset" fill="#CC3300" x="3412.38" y="5419.03" width="1143.39" height="749.35" rx="138.91" ry="209.88"/>
+    <text x="3626.78" y="5739.63"  fill="white" font-weight="bold" font-size="198.78px" font-family="Arial">СБРОС </text>
+    <text x="3616.59" y="5961.7"  fill="white" font-weight="bold" font-size="198.78px" font-family="Arial">ЗАЩИТ</text>
+  </g>
   <rect fill="#CC3300" x="1780.06" y="4619.44" width="716.78" height="343.51" rx="87.08" ry="96.21"/>
   <text x="2694.81" y="4638.77"  fill="#2B2A29" font-weight="normal" font-size="176.39px" font-family="Arial">Недопустимая </text>
   <text x="2694.81" y="4835.83"  fill="#2B2A29" font-weight="normal" font-size="176.39px" font-family="Arial">разностьнапряжений </text>
