@@ -31,18 +31,24 @@ const btnResetProtections = document.querySelector(".btn__reset_protections");
 
 const svgSchema = document.querySelector("#svgSchema").contentDocument;
 const tAKB = svgSchema.querySelector("#tAKB");
-const tAKB_text = svgSchema.querySelector("#tAKB_text");
-const tAKB_group = svgSchema.querySelector("#tAKB_group");
+// const tAKB_text = svgSchema.querySelector("#tAKB_text");
+// const tAKB_group = svgSchema.querySelector("#tAKB_group");
 const btn_reset = svgSchema.querySelector("#btn_reset");
-console.log(tAKB);
+// console.log(tAKB);
 
 const tAKB_div = document.createElement("div");
+const btn_reset_div = document.createElement("button");
+
 tAKB_div.classList.add("div__interactive_element");
+btn_reset_div.classList.add("btn__reset_protections_position");
+
 document
     .querySelector("#svgSchema")
-    .insertAdjacentElement("afterend", tAKB_div);
+    .insertAdjacentElement("afterend", tAKB_div)
+    .insertAdjacentElement("afterend", btn_reset_div);
 
 tAKB_div.textContent = "+15°C";
+btn_reset_div.textContent = "СБРОС ЗАЩИТ";
 
 // tAKB.attributes.fill.value = "yellow";
 // tAKB_text.attributes.setNamedItem(document.createAttribute("text-anchor"));

@@ -188,6 +188,22 @@ main {
     background-color: rgb(204, 20, 20);
     border-color: rgb(204, 20, 20);
 }
+.btn__reset_protections_position {
+    position: absolute;
+    left: 366px;
+    top: 625px;
+    color: white;
+    background-color: red;
+    border-color: red;
+    border-radius: 10px;
+    width: 123px;
+    height: 84px;
+}
+
+.btn__reset_protections_position:hover {
+    background-color: rgb(204, 20, 20);
+    border-color: rgb(204, 20, 20);
+}
 
 .div__interactive_element {
     width: 85px;
