@@ -29,12 +29,25 @@ const currentData = document.querySelector(".current__data");
 const currentText = document.querySelector(".current__text");
 const btnResetProtections = document.querySelector(".btn__reset_protections");
 
-const svgSchema = document.querySelector("#svgSchema").contentDocument;
-const tAKB = svgSchema.querySelector("#tAKB");
-// const tAKB_text = svgSchema.querySelector("#tAKB_text");
-// const tAKB_group = svgSchema.querySelector("#tAKB_group");
-const btn_reset = svgSchema.querySelector("#btn_reset");
+window.onload = () => {
+    const svgSchema = document.querySelector("#svgSchema").contentDocument;
+    const tAKB = svgSchema.querySelector("#tAKB");
+    console.log(tAKB);
+    const rectAll = svgSchema.querySelectorAll("rect");
+    console.log(svgSchema);
+    console.log(rectAll);
+}
+
+// const svgSchema = document.querySelector("#svgSchema").contentDocument;
+// const tAKB = svgSchema.querySelector("#tAKB");
+// // const tAKB_text = svgSchema.querySelector("#tAKB_text");
+// // const tAKB_group = svgSchema.querySelector("#tAKB_group");
+// const btn_reset = svgSchema.querySelector("#btn_reset");
 // console.log(tAKB);
+// const rectAll = svgSchema.querySelector("#Слой_x0020_1");
+// console.log(svgSchema);
+// console.log(rectAll); 
+
 
 const tAKB_div = document.createElement("div");
 const btn_reset_div = document.createElement("button");
