@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/js.js"></script>
+    <title>Мнемосхема прибора</title>
+</head>
+<body>
+    <main>
+        Мнемосхема прибора
+        <br>
+        <br>
+        <div class="warning interactive_element">Нет данных</div>
+        <br>
+
+        <div class="accumulator">
+
+
+            <div class="battery_temperature interactive_element">
+                <div class="battery_temperature__text">
+                    Температура АКБ
+                </div>            
+                <div class="battery_temperature__data background_gray size_element">
+                    ---
+                </div>
+            </div>
+
+            <div class="battery" id="battery_01">
+
+                <div class="mnemonic_diagram">
+                    <img src="./icons/mnemoskhema.svg" alt="mnemoskhema">
+                </div>
+
+                <div class="voltage_group interactive_element interactive_element__padding_left">
+                    <div class="voltage_group__data background_gray size_element">
+                        ---
+                    </div>
+                    <div class="voltage_group__text">
+                        Напряжение группы
+                    </div> 
+                </div>
+                <div class="voltage_element interactive_element interactive_element__padding_left">
+                    <div class="voltage_element__data background_gray size_element">
+                        ---
+                    </div>
+                    <div class="voltage_element__text">
+                        Напряжение элемента
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="asymmetry interactive_element ">
+                <div class="asymmetry__data background_gray size_element">
+                    ---
+                </div>
+                <div class="asymmetry__text">
+                    Ассиметрия
+                </div> 
+            </div>
+            
+            <div class="battery" id="battery_02">
+                <div class="voltage_group interactive_element interactive_element__padding_left">
+                    <div class="voltage_group__data background_gray size_element">
+                        ---
+                    </div>
+                    <div class="voltage_group__text">
+                        Напряжение группы
+                    </div> 
+                </div>
+                <div class="voltage_element interactive_element interactive_element__padding_left">
+                    <div class="voltage_element__data background_gray size_element">
+                        ---
+                    </div>
+                    <div class="voltage_element__text">
+                        Напряжение элемента
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+        <div class="condition_accumulator">
+            <div class="voltage_accumulator interactive_element ">
+                <div class="voltage_accumulator__data background_gray size_element ">
+                    ---
+                </div>
+                <div class="voltage_accumulator__text">
+                    Напряжение АКБ
+                </div> 
+            </div>
+
+            <div class="switch_status ">
+                <div class="switch_status__off"> </div>
+            </div>
+
+            <div class="fault interactive_element hidden">
+                <div class="fault__data background_red size_element">
+                    Авария
+                </div>
+                <div class="fault__info">
+                    Причина аварии
+                </div> 
+            </div>
+
+            <div class="current hidden">
+                <div class="current_arrow__charge"></div>
+                <div class="current_line__charge"></div>
+                
+            </div>
+            <div class="voltage_current interactive_element">
+                <div class="current__data background_gray size_element">
+                    ---
+                </div>
+                <div class="current__text">
+                    Ток(заряд)
+                </div> 
+            </div>
+            <button class="btn__reset_protections hidden">СБРОС ЗАЩИТ</button>
+        </div>
+    </main>
+
+<div  style="margin-top: 200px; margin-left: 50px; position: relative;">
+    <br>
+    <hr>
+    <object id="svgSchema" data="./icons/mnemoskhema3.svg" type="image/svg+xml" width="500" height="700"></object>
+</div>
+
+
+
+</body>
+</html>

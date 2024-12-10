@@ -31,11 +31,7 @@ const btnResetProtections = document.querySelector(".btn__reset_protections");
 
 window.onload = () => {
     const svgSchema = document.querySelector("#svgSchema").contentDocument;
-    const tAKB = svgSchema.querySelector("#tAKB");
-    console.log(tAKB);
-    const rectAll = svgSchema.querySelectorAll("rect");
-    console.log(svgSchema);
-    console.log(rectAll);
+    
 }
 
 // const svgSchema = document.querySelector("#svgSchema").contentDocument;

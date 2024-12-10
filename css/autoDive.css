@@ -1,0 +1,41 @@
+
+main {
+    position: relative;
+    margin: 50px auto;
+    max-width: 1000px;
+    /* background-color:blueviolet; */
+}
+
+.background_gray {
+    background-color: rgb(209, 209, 209);
+}
+
+.text_gray {
+    color: rgb(209, 209, 209);
+}
+
+.background_red {
+    background-color: red;
+    color: white;
+}
+
+.background_blue {
+    background-color: rgb(2, 133, 255);
+    color: white;
+}
+
+.background_yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.btn__reset {
+    /* position: absolute; */
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+.btn__reset:hover {
+    background-color: rgb(204, 20, 20);
+    border-color: rgb(204, 20, 20);
+}
