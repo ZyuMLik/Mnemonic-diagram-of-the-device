@@ -190,14 +190,14 @@ main {
 }
 .btn__reset_protections_position {
     position: absolute;
-    left: 366px;
-    top: 625px;
+    left: 380.75px;
+    top: 600px;
     color: white;
     background-color: red;
     border-color: red;
     border-radius: 10px;
-    width: 123px;
-    height: 84px;
+    width: 94.07px;
+    height: 61.65px;
 }
 
 .btn__reset_protections_position:hover {
@@ -207,7 +207,7 @@ main {
 
 .div__interactive_element {
     width: 85px;
-    height: 40px;
+    height: 36.88px;
     background-color: gold;
     border-radius: 10px;
     /* opacity: 50%; */
@@ -218,7 +218,7 @@ main {
     /* margin-top: 100px;
     margin-left: 300px; */
     left: 298px;
-    top: 120px;
+    top: 85.77px;
     /* 791px; */
 
 }
